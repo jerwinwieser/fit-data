@@ -1,0 +1,17 @@
+{% extends "readings/base.html" %}
+
+{% block title %}
+readings
+{% endblock %}
+
+{% block content %}
+<li>
+{% for title in titles %}
+<ul>
+	{{ title.title_text }}
+	{{ title.pub_date }}
+</ul>
+	{% endfor %}
+</li>
+
+{% endblock %}
